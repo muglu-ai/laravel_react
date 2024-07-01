@@ -14,7 +14,6 @@ class AuthController extends Controller
             'first_name' => $request->first_name,
             'email' => $request->email,
             'last_name' => $request->last_name,
-            'password' => $request->password,
         ];
 
         $formData['password'] = bcrypt($request->password);
